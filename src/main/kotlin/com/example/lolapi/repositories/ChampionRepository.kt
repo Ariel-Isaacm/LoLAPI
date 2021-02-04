@@ -12,6 +12,7 @@ import java.io.File
 class ChampionRepository {
     val championStorage: Map<String, Champion> = populateMap()
 
+    //todo this should be a proper call to the db instead of just a init loader
     private final fun populateMap(): Map<String, Champion> {
         val champions = HashMap<String, Champion>()
 
